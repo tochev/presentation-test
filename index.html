@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Test Presentation</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h2>Test Presentation</h2>
+          <p>This is a presentation for testing the output of a laptop and the behaviour of projectors and video capture equipment.</p>
+          <p><small><a href="">TODO link</a></small></p>
+          <p><small>Use full screen when testing</small></p>
+        </section>
+        <section data-background-image="resources/eizo-test-pattern.png" data-background-color="red" data-background-size="contain" data-background-repeat="no-repeat">scaled</section>
+				<section data-background-image="resources/eizo-test-pattern.png" data-background-color="red" data-background-size="1920px" data-background-repeat="no-repeat">1080p</section>
+        <section>
+          <h2>Color Wheel</h2>
+          <div class="r-stretch" >
+            <!-- We have two wheels so that we have the wheels outside of any projector menu -->
+            <img style="float: left" src="resources/color-wheel-wikipedia.png"></img>
+            <img style="float: right" src="resources/color-wheel-wikipedia.png"></img>
+          </div>
+          <p style="clear: both">
+            Color wheels for testing of colors.
+          </p>
+        </section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Pretty Code</h2>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    ...
+						  );
+						}
+					</code></pre>
+					<p>
+            <small>
+              Code syntax highlighting courtesy of <a href="https://highlightjs.org/usage/">highlight.js</a>.
+            </small>
+          </p>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Pretty Code</h2>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						import React, { useState } from 'react';
+
+						function Example() {
+						  const [count, setCount] = useState(0);
+
+						  return (
+						    ...
+						  );
+						}
+					</code></pre>
+					<p>
+            <small>
+              Code syntax highlighting courtesy of <a href="https://highlightjs.org/usage/">highlight.js</a>.
+            </small>
+          </p>
+				</section>
+        <section data-background-color="white" style="font-color: black">
+          <h2>WHITE BACKGROUND TEST</h2>
+          <p>This a slide to test on a white background</p>
+          <p><small>Some small font</small></p>
+        </section>
+        <section>
+          <h2>Video-Audio Test</h2>
+          <video data-autoplay data-preload src="resources/big-buck-bunny-cut.mp4"></video>
+          <p>Hit "P" and then next.</p>
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
