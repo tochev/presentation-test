@@ -1,5 +1,7 @@
 # Presentation Test
 
+Use at [https://github.com/tochev/presentation-test](https://github.com/tochev/presentation-test)
+
 This is a `reveal.js` presentation for testing the output of a laptop and
 the behaviour of projectors and video capture equipment.
 
